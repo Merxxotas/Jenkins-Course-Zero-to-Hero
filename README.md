@@ -17,6 +17,3 @@ The course can be purchased here:
 - Jenkins
 - Docker
 - YAML files (pipelines)
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
