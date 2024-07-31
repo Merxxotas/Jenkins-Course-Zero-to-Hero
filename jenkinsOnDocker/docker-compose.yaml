@@ -1,0 +1,28 @@
+# Use of "version #" is now deprecated (you can use it, but will throw a warning)
+# version: '3.8'
+
+services:
+  jenkins:
+    container_name: jenkinsOnDocker
+    image: jenkins/jenkins:2.470-slim-jdk17
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    privileged: true
+    user: root
+    volumes:
+      - jenkins-data:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+      - jenkins-docker-certs:/certs/client:ro
+        #network_mode: host
+    networks:
+      - trainingNetwork
+
+networks:
+  trainingNetwork:
+    external: true
+
+volumes:
+  jenkins-data:
+    external: true
+  jenkins-docker-certs:
