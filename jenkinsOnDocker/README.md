@@ -104,7 +104,9 @@ cat /var/jenkins_home/secrets initialAdminPassword
 
 See the password explicitly through the docker logs:
 
+```bash 
 docker logs --id-of-docker-container
+```
 
 ![initialAdminPasswordDockerLogs](https://github.com/user-attachments/assets/4c2293fe-3b07-41bf-b3ec-b1726284b051)
 
