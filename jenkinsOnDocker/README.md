@@ -1,4 +1,3 @@
-
 # Jenkins Course: From Zero to Hero
 
 ## Commands Used for setting up a Jenkins server
@@ -36,4 +35,4 @@ docker compose up -d
 
 If everything is 🆗👌🆗, Jenkins will show something like this:
 
-![App Screeshot](https://drive.google.com/file/d/1qwCAYKaSbOHMgde3WJkWEwfFaJH0mD_D/view?usp=sharing)
+![jenkinsInitialAdminPassword](https://github.com/user-attachments/assets/31162bd4-fd23-4ce2-8a60-13d0d43be8d3)
