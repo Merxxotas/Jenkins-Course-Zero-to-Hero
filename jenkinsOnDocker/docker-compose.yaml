@@ -4,7 +4,7 @@
 services:
   jenkins:
     container_name: jenkinsOnDocker
-    image: jenkins/jenkins:2.470-slim-jdk17
+    image: jenkins/jenkins:2.471-jdk17
     ports:
       - "8080:8080"
       - "50000:50000"
