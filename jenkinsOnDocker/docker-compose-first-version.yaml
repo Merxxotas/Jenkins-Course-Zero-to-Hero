@@ -4,8 +4,7 @@
 services:
   jenkins:
     container_name: jenkinsOnDocker
-    image: jenkins/jenkins:2.472-jdk17
-    command: bash -c "apt-get update && apt-get install -y iputils-ping && /usr/bin/tini -- /usr/local/bin/jenkins.sh"
+    image: jenkins/jenkins:2.471-jdk17
     ports:
       - "8080:8080"
       - "50000:50000"
@@ -20,14 +19,7 @@ services:
         #network_mode: host
     networks:
       - trainingNetwork
-# New Container to create and connect via SSH
-  remote_host:
-    container_name: remote-host
-    image: debian:stable-slim
-    build:
-      context: ../unit2-jenkins-and-docker
-    networks:
-      - trainingNetwork
+
 networks:
   trainingNetwork:
     external: true
