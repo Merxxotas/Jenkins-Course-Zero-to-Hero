@@ -143,5 +143,6 @@ print the values of the script:
 cat /tmp/remote-file0.log /tmp/remote-file1.log
 ```
 
+![unit2_0](https://github.com/user-attachments/assets/4c904e58-ab59-4560-ade1-16bfc3ee5cad)
 
 # KEEP LEARNING! 🚀🚀
