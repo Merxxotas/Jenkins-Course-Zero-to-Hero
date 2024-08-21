@@ -19,7 +19,7 @@ On this unit, We used the following topics:
 
 One diagram that can fit the goal of this unit:
 
-![unit3_0](https://github.com/user-attachments/assets/4c904e58-ab59-4560-ade1-16bfc3ee5cad)
+![unit3_0](https://github.com/user-attachments/assets/a3b62cb5-6bba-4c53-93ad-36f979d35128)
 
 
 ### Installlation of AWS CLI and MySQL
@@ -64,7 +64,7 @@ Moreover , to install our MySQL server on our `docker-compose.yaml` we'll need t
 
 Once you already set up the `docker-compose.yaml` file and did a `docker compose up -d`, you should see something like this:
 
-![unit3_1](https://github.com/user-attachments/assets/4c904e58-ab59-4560-ade1-16bfc3ee5cad)
+![unit3_1](https://github.com/user-attachments/assets/d849b615-f4e9-4fbb-9b01-b71db1d79e0f)
 
 Where you can see that you now have three docker servers (the new one is the MySQL server on the `docker-compose.yaml` file.)
 
@@ -113,6 +113,6 @@ docker compose up -d
 
 If everything is 🆗👌🆗, you can check if MySQL (client) and AWS_CLI are correctly installed on the `remote_host` docker (enter to the docker itself via `docker exec`):
 
-![unit3_2](https://github.com/user-attachments/assets/4c904e58-ab59-4560-ade1-16bfc3ee5cad)
+![unit3_2](https://github.com/user-attachments/assets/39ea99a4-fff0-4904-810a-4f01aab6bff2)
 
 # KEEP LEARNING! 🚀🚀
