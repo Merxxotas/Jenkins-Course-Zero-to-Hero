@@ -23,24 +23,9 @@ services:
 # New Container to create and connect via SSH
   remote_host:
     container_name: remote-host
-    image: ubuntu:24.04
-    environment:
-      - TZ=America/Bogota
-    user: root
+    image: debian:stable-slim
     build:
-      context: ../unit2-jenkins-docker-and-SSH
-    networks:
-      - trainingNetwork
-# New container to use a MySQL database as server
-  db_host:
-    container_name: dbMySQL
-    image: mysql:8.0.39-debian
-    environment:
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-      - TZ=America/Bogota
-    user: root
-    volumes:
-      - db-data:/var/lib/mysql
+      context: ../unit2-jenkins-and-docker
     networks:
       - trainingNetwork
 networks:
@@ -49,7 +34,5 @@ networks:
 
 volumes:
   jenkins-data:
-    external: true
-  db-data:
     external: true
   jenkins-docker-certs:
