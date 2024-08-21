@@ -45,7 +45,7 @@ man ssh
 ### Create a Dockerfile
 For a communication with our SSH server, we created a Dockerfile, this Dockerfile containes important topics like:
 
-- OS image to use (in this case, debian)
+- OS image to use (in this case, Ubuntu)
 - Installation of importante packages to it's correct use.
 - Creation of user and password for the new server
 - SSH key to make connection VIA SSH
